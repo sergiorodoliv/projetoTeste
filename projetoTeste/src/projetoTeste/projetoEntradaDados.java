@@ -10,7 +10,16 @@ public class projetoEntradaDados {
 		
 		//System.out.println("Carro é " + carros);
 		
-		JOptionPane.showMessageDialog(null, "Carro é " + carros);
+		int resposta = JOptionPane.showInternalConfirmDialog(null, "Deseja ver o Carro Digitado?");
+		
+	//	System.out.println(resposta);
+		if (resposta == 0) {
+			
+			JOptionPane.showMessageDialog(null, "Carro é " + carros);
+			
+		}
+		
+		
 	}
 
 }
