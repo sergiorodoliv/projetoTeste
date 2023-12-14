@@ -26,6 +26,7 @@ public class programaExecutavel {
 		
 		System.out.println("Media do Aluno "+ aluno1.getNome() + " é " + aluno1.getMediaNota());
 		System.out.println("Aluno está " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println(aluno1);
 		
 	}
 	
