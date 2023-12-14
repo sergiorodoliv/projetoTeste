@@ -8,7 +8,7 @@ public class programaExecutavel {
         /*aluno1 é uma referencia do obbjeto Aluno, new Aluno() é uma instancia*/
 		Aluno  aluno1 = new Aluno();
 		
-		aluno1.setDataMatricula("05/12/2023");
+		/*aluno1.setDataMatricula("05/12/2023");
 		aluno1.setDataNascimento("08/04/1965");
 		aluno1.setIdade(58);
 		aluno1.setNome("Sérgio Rodrigues");
@@ -26,7 +26,18 @@ public class programaExecutavel {
 		
 		System.out.println("Media do Aluno "+ aluno1.getNome() + " é " + aluno1.getMediaNota());
 		System.out.println("Aluno está " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println(aluno1);
+		System.out.println(aluno1);*/
+		
+		aluno1.setNome("Sérgio Rodrigues de Oliveira");
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Sérgio Rodrigues de Oliveira");
+		
+		if (aluno1.equals(aluno2)) {
+			System.out.println("São iguais");
+			
+		}else {
+		System.out.println("São diferentes");	
+		}
 		
 	}
 	
