@@ -1,5 +1,7 @@
 package projetoTeste;
 
+import javax.swing.JOptionPane;
+
 import classes.Aluno;
 
 public class programaExecutavel {
@@ -8,7 +10,11 @@ public class programaExecutavel {
         /*aluno1 é uma referencia do obbjeto Aluno, new Aluno() é uma instancia*/
 		Aluno  aluno1 = new Aluno();
 		
-		aluno1.setDataMatricula("05/12/2023");
+		String dataMatricula;
+		
+		dataMatricula = JOptionPane.showInputDialog("Qual a Data da Matricula?");
+		//aluno1.setDataMatricula("05/12/2023");
+		aluno1.setDataMatricula(dataMatricula);
 		aluno1.setDataNascimento("08/04/1965");
 		aluno1.setIdade(58);
 		aluno1.setNome("Sérgio Rodrigues");
@@ -19,15 +25,15 @@ public class programaExecutavel {
 		aluno1.setRegistroGeral("14.456.789");
 		aluno1.setSerieMatriculado("Primeiro");
 		
-		aluno1.setNota1(70);
-		aluno1.setNota2(70);
-		aluno1.setNota3(75);
-		aluno1.setNota4(70);
+		aluno1.getDisciplina().setNota1(70);
+		aluno1.getDisciplina().setNota2(70);
+		aluno1.getDisciplina().setNota3(75);
+		aluno1.getDisciplina().setNota4(70);
 		
-		aluno1.setDisciplina1("disciplina 1");
-		aluno1.setDisciplina2("disciplina 2");
-		aluno1.setDisciplina3("disciplina 3");
-		aluno1.setDisciplina4("disciplina 4");
+		aluno1.getDisciplina().setDisciplina1("disciplina 1");
+		aluno1.getDisciplina().setDisciplina2("disciplina 2");
+		aluno1.getDisciplina().setDisciplina3("disciplina 3");
+		aluno1.getDisciplina().setDisciplina4("disciplina 4");
 		
 		System.out.println("Media do Aluno "+ aluno1.getNome() + " é " + aluno1.getMediaNota());
 		System.out.println("Aluno está " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
