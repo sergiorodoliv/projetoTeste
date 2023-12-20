@@ -8,7 +8,7 @@ public class programaExecutavel {
         /*aluno1 é uma referencia do obbjeto Aluno, new Aluno() é uma instancia*/
 		Aluno  aluno1 = new Aluno();
 		
-		/*aluno1.setDataMatricula("05/12/2023");
+		aluno1.setDataMatricula("05/12/2023");
 		aluno1.setDataNascimento("08/04/1965");
 		aluno1.setIdade(58);
 		aluno1.setNome("Sérgio Rodrigues");
@@ -24,9 +24,14 @@ public class programaExecutavel {
 		aluno1.setNota3(75);
 		aluno1.setNota4(70);
 		
+		aluno1.setDisciplina1("disciplina 1");
+		aluno1.setDisciplina2("disciplina 2");
+		aluno1.setDisciplina3("disciplina 3");
+		aluno1.setDisciplina4("disciplina 4");
+		
 		System.out.println("Media do Aluno "+ aluno1.getNome() + " é " + aluno1.getMediaNota());
 		System.out.println("Aluno está " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println(aluno1);*/
+		System.out.println(aluno1);
 		
 		aluno1.setNome("Sérgio Rodrigues de Oliveira");
 		Aluno aluno2 = new Aluno();
