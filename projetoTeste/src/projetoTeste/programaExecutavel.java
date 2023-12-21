@@ -3,6 +3,7 @@ package projetoTeste;
 import javax.swing.JOptionPane;
 
 import classes.Aluno;
+import classes.Disciplina;
 
 public class programaExecutavel {
 	
@@ -24,18 +25,31 @@ public class programaExecutavel {
 		aluno1.setNumeroCpf("001.002.0033-90");
 		aluno1.setRegistroGeral("14.456.789");
 		aluno1.setSerieMatriculado("Primeiro");
+
+		Disciplina disciplina1 = new Disciplina();
+		disciplina1.setNota(65);
+		disciplina1.setDisciplina("Matematica");
 		
-		aluno1.getDisciplina().setNota1(70);
-		aluno1.getDisciplina().setNota2(70);
-		aluno1.getDisciplina().setNota3(75);
-		aluno1.getDisciplina().setNota4(70);
+		Disciplina disciplina2 = new Disciplina();
+		disciplina2.setNota(65);
+		disciplina2.setDisciplina("Portugues");
 		
-		aluno1.getDisciplina().setDisciplina1("disciplina 1");
-		aluno1.getDisciplina().setDisciplina2("disciplina 2");
-		aluno1.getDisciplina().setDisciplina3("disciplina 3");
-		aluno1.getDisciplina().setDisciplina4("disciplina 4");
+		Disciplina disciplina3 = new Disciplina();
+		disciplina3.setNota(75);
+		disciplina3.setDisciplina("Ingles");
 		
-		System.out.println("Media do Aluno "+ aluno1.getNome() + " é " + aluno1.getMediaNota());
+		Disciplina disciplina4 = new Disciplina();
+		disciplina4.setNota(85);
+		disciplina4.setDisciplina("Ciências");
+		
+		aluno1.getDisciplinas().add(disciplina1);
+		aluno1.getDisciplinas().add(disciplina2);
+		aluno1.getDisciplinas().add(disciplina3);
+		aluno1.getDisciplinas().add(disciplina4);
+		
+
+
+	    System.out.println("Media do Aluno "+ aluno1.getNome() + " é " + aluno1.getMediaNota());
 		System.out.println("Aluno está " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
 		System.out.println(aluno1);
 		
