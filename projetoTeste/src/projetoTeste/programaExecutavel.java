@@ -26,27 +26,19 @@ public class programaExecutavel {
 		aluno1.setRegistroGeral("14.456.789");
 		aluno1.setSerieMatriculado("Primeiro");
 
-		Disciplina disciplina1 = new Disciplina();
-		disciplina1.setNota(65);
-		disciplina1.setDisciplina("Matematica");
-		
-		Disciplina disciplina2 = new Disciplina();
-		disciplina2.setNota(65);
-		disciplina2.setDisciplina("Portugues");
-		
-		Disciplina disciplina3 = new Disciplina();
-		disciplina3.setNota(75);
-		disciplina3.setDisciplina("Ingles");
-		
-		Disciplina disciplina4 = new Disciplina();
-		disciplina4.setNota(85);
-		disciplina4.setDisciplina("Ciências");
-		
-		aluno1.getDisciplinas().add(disciplina1);
-		aluno1.getDisciplinas().add(disciplina2);
-		aluno1.getDisciplinas().add(disciplina3);
-		aluno1.getDisciplinas().add(disciplina4);
-		
+		for (int pos = 1; pos <= 4; pos++) {
+			
+			String nomeDisciplina = JOptionPane.showInputDialog("Informe o nome da Disciplina " +pos+ " ?");
+			String notaDisciplina = JOptionPane.showInputDialog("Informe a nota da Disciplina " +pos+ " ?");
+			
+			Disciplina disciplina = new Disciplina();
+			
+			disciplina.setDisciplina(nomeDisciplina);
+			disciplina.setNota(Double.valueOf(notaDisciplina));
+			
+			aluno1.getDisciplinas().add(disciplina);
+			
+		}
 
 
 	    System.out.println("Media do Aluno "+ aluno1.getNome() + " é " + aluno1.getMediaNota());
